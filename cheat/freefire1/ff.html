@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ORDER CHEAT</title>
+  <link rel="stylesheet" href="ff.css">
+</head>
+<body>
+
+  <header>
+    <span class="back-arrow" onclick="goBack()">&#9668;</span>
+    <h3>ORDER CHEAT</h3>
+  </header>
+
+  <section>
+    <form id="orderForm">
+      <img src="img/freefire.jpg" alt="DikaRiza" width="100" height="100">
+
+      <div id="warningMessage" class="hidden">
+        <p>Silakan lengkapi semua data sebelum melakukan pemesanan.</p>
+        <button type="button" onclick="hideWarning()">Tutup</button>
+      </div>
+
+      <label for="gameName">Cheat Game :</label>
+      <input type="text" id="gameName" name="gameName" value="FREE-FIRE" readonly>
+
+      <div id="description">
+        <p>𝗜𝗡𝗙𝗢𝗥𝗠𝗔𝗧𝗜𝗢𝗡<p>Hallo Customer! Cheat freefire ini memiliki berbagai macam fitur ya, cheat ini berbentuk file bisa disebut dengan [ obb ] cheat ini sangat berguna untuk kalian push rank,isian,dan tournament tenang saja cheat ini telah di uji sebelumnya jadi aman asal kalian ikuti peraturan saya agar akun kalian aman terimakasih.<p>𝗟𝗜𝗦𝗧 𝗙𝗜𝗧𝗨𝗥 𝗖𝗛𝗘𝗔𝗧 :<p>- MAGIC BULLET & HOLOGRAM<p>- NECK HEADSHOT & HOLOGRAM<p>- HOLOGRAM ONLY</p>
+      </div>
+
+      <label for="priceList">Price List Cheat :</label>
+      <select id="priceList" name="priceList" required>
+        <option value="" disabled selected>Silahkan Pilih</option>
+        <option value="MAGIC BULLET & HOLOGRAM : Rp.120.000">MAGIC BULLET & HOLOGRAM : Rp.120.000</option>
+        <option value="NECK HEADSHOT & HOLOGRAM : Rp.150.000">NECK HEADSHOT & HOLOGRAM : Rp.150.000</option>
+        <option value="HOLOGRAM ONLY : Rp.110.000">HOLOGRAM ONLY : Rp.110.000</option>
+      </select>
+
+      <label for="paymentList">Pilih Metode Pembayaran:</label>
+      <select id="paymentList" name="paymentList" required>
+        <option value="" disabled selected>Pilihan Payment</option>
+        <option value="Qris All Payment">Qris All Payment</option>
+      </select>
+
+      <button type="button" onclick="placeOrder()">Order Now</button>
+      <!-- Button baru -->
+      <button type="button" onclick="openFile()">Free Cheat</button>
+    </form>
+  </section>
+
+  <script src="ff.js"></script>
+
+</body>
+</html>
