@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="convert.css">
+    <title>DIKARIZA MARKET</title>
+</head>
+
+<header>
+    <span class="back-arrow" onclick="goBack()">&#9668;</span>
+    <h3>E-WALLET</h3>
+</header>
+
+
+<body>
+    <div class="container">
+
+        <div class="logo-container">
+            <!-- Replace the following line with your logo image -->
+            <img src="logo.png" alt="Logo" class="logo">
+        </div>
+
+     
+        <form id="topupForm">
+            <label for="game">Select Payment :</label>
+            <select id="game" name="game" onchange="updateDiamondList()">
+                <option value="" disabled selected>Select your payment</option>
+                <option value="gopay">GOPAY</option>
+                <option value="dana">DANA</option>
+                <option value="ovo">OVO</option>
+                <option value="shopeepay">SHOPEEPAY</option>
+            </select>
+
+            <label for="gameID">Masukan Nomor Anda :</label>
+            <input type="number" id="gameID" name="gameID" placeholder="Contoh : +62823-2109-8084">
+
+            <label for="username">Masukan Username Payment :</label>
+            <input type="text" id="username" name="username" placeholder="Contoh : D****S / DIKARIZA STORE">
+
+            <label for="diamond">PriceList</label>
+            <select id="diamond" name="diamond">
+                <!-- Daftar diamond akan di-update oleh fungsi updateDiamondList() -->
+            </select>
+
+            <!-- Menampilkan harga diamond -->
+            <p id="diamondPriceText"></p>
+
+            <!-- Button Topup dengan animasi -->
+            <button type="button" id="topupButton" onclick="submitTopup()">Topup Sekarang</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
