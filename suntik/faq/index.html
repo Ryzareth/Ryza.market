@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQ - Suntik Sosmed</title>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom, #141E30, #243B55);
+      color: #fff;
+      min-height: 100vh;
+    }
+
+    /* Navbar styles */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 20px;
+      background: rgba(255, 255, 255, 0.1);
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .navbar .back-arrow {
+      display: flex;
+      align-items: center;
+      color: #fff;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    .navbar .back-arrow:hover {
+      color: #167AC6;
+    }
+
+    .navbar .back-arrow i {
+      margin-right: 8px;
+      font-size: 20px;
+    }
+
+    .navbar .logo {
+      font-size: 20px;
+      font-weight: bold;
+      color: #167AC6;
+      text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+    }
+
+    .faq-container {
+      max-width: 900px;
+      margin: 20px auto; /* Mengurangi margin agar lebih dekat */
+      padding: 20px;
+      background: rgba(255, 255, 255, 0.1);
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+      border-radius: 20px;
+      overflow: hidden;
+      animation: fadeIn 1.2s ease;
+    }
+
+    .faq-title {
+      font-size: 36px;
+      text-align: center;
+      margin-bottom: 20px; /* Memberikan jarak kecil ke bawah */
+      color: #167AC6;
+      text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+      animation: slideIn 1s ease;
+    }
+
+    .faq-item {
+      margin-bottom: 20px;
+      overflow: hidden;
+    }
+
+    .faq-question {
+      cursor: pointer;
+      background: #1F2E44;
+      color: #fff;
+      padding: 15px 20px;
+      border-radius: 10px;
+      transition: all 0.4s ease;
+      position: relative;
+      font-weight: bold;
+      text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    .faq-question:hover {
+      transform: scale(1.02);
+      background: #243B55;
+      box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    .faq-question:after {
+      content: '\25BC';
+      position: absolute;
+      right: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+      transition: transform 0.3s ease;
+    }
+
+    .faq-answer {
+      padding: 20px;
+      display: none;
+      background: rgba(255, 255, 255, 0.2);
+      border-left: 5px solid #167AC6;
+      border-radius: 0 10px 10px 10px;
+      margin-top: 10px;
+      animation: fadeIn 0.6s ease;
+    }
+
+    .faq-item.open .faq-question:after {
+      transform: translateY(-50%) rotate(180deg);
+    }
+
+    .faq-item.open .faq-answer {
+      display: block;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes slideIn {
+      from { opacity: 0; transform: translateX(-50px); }
+      to { opacity: 1; transform: translateX(0); }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <a href="https://dikarizamarket.xcodehoster.id/" class="back-arrow">
+      <i>&larr;</i> Kembali
+    </a>
+    <div class="logo">FAQ</div>
+  </nav>
+
+  <!-- FAQ Container -->
+  <div class="faq-container">
+    <h1 class="faq-title">SOSMED BOOST</b></h1>
+
+    <div class="faq-item">
+      <div class="faq-question">Apa itu layanan suntik sosmed?</div>
+      <div class="faq-answer">Layanan suntik sosmed adalah cara untuk meningkatkan engagement di media sosial seperti Instagram, TikTok, dan lainnya secara cepat.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">Apakah layanan ini aman digunakan?</div>
+      <div class="faq-answer">Kami menggunakan metode yang aman dan tidak melanggar kebijakan platform media sosial.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">Berapa lama prosesnya?</div>
+      <div class="faq-answer">Proses biasanya memakan waktu antara 1-15 menit tergantung dari jenis layanan yang Anda pilih.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">Bagaimana cara memesan?</div>
+      <div class="faq-answer">Langkah pertama silahkan kalian memilih jenis social media yang ingin kalian suntik, setelah memilih lalu isi format data semua data yang ada di disitu,ingat jangan sampai salah memasukan data / typo,jika ada kesalahan memasukan data itu diluar tanggung jawab admin,dan setelah anda mengisi format silahkan click button order now,nanti kalian akan diarahkan ke whatsapp untuk mengirim data format yang anda isi di website,nanti admin bakal mengirim format payment untuk kalian menyelesaikan pembayaran,setelah anda membayar pastikan untuk screenshot bukti pembayaran lalu kirimkan ke admin,setelah pembayaran selesai admin akan memproses akun anda secepat mungkin.</div>
+    </div>
+  </div>
+
+  <script>
+    const faqItems = document.querySelectorAll('.faq-item');
+
+    faqItems.forEach(item => {
+      const question = item.querySelector('.faq-question');
+
+      question.addEventListener('click', () => {
+        const isOpen = item.classList.contains('open');
+
+        faqItems.forEach(i => i.classList.remove('open'));
+
+        if (!isOpen) {
+          item.classList.add('open');
+        }
+      });
+    });
+  </script>
+</body>
+</html>
